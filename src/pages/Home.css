@@ -1,0 +1,124 @@
+.home-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+  color: white;
+  text-align: center;
+}
+
+/* HERO SECTION */
+.hero {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 60px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 26px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #ff4c60, #ff2e46);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 76, 96, 0.3);
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 76, 96, 0.5);
+}
+
+.secondary-btn {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: white;
+  color: #1e1e2f;
+}
+
+/* CATEGORY SECTION */
+.categories-preview h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* GRID */
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: rgba(0,0,0.815);
+  color: rgb(219, 32, 32);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 10px 18px;
+  }
+}
